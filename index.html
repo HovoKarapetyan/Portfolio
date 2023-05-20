@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Persional Portfolio Website</title>
+        <!-- <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-gFDfyfswQxuX6aHJ6KEfV7jxFILWdZ+c7UZIOYhZTZZpLlB/ovX9LjyLcbpc+xwhiGQ2D8jK1CrZfYIKPrd1MQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <script src="https://kit.fontawesome.com/6d227f888c.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Developer</p>
+                    <h1>Hi, I'm <span>Hovhannes</span><br>from Armenia</h1>
+                </div>
+                <div class="custom-shape-divider-bottom-1683642078">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="custom-shape-divider-bottom-1683741961">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path
+                            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                            opacity=".25" class="shape-fill"></path>
+                        <path
+                            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                            opacity=".5" class="shape-fill"></path>
+                        <path
+                            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Aut eos voluptate laborum velit culpa? Dicta
+                            impedit quis fuga! Veritatis magnam quia nam omnis
+                            necessitatibus ea quasi fuga obcaecati distinctio
+                            quibusdam? Labore quibusdam nobis doloremque magnam
+                            rerum optio ea laborum soluta sequi cum dignissimos,
+                            vitae tempore! Aut suscipit quasi aspernatur.
+                            Nesciunt modi pariatur temporibus nobis laboriosam
+                            optio ut iusto provident iste, at similique
+                            molestiae quod corporis!
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"
+                                onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"
+                                onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web</span><br>Developer</li>
+                                <li><span>Desktop</span><br>Developer</li>
+                                <li><span>Game</span><br>Developer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Lorem ipsum
+                                    dolor sit amet consectetur.</li>
+                                <li><span>2019 - 2021</span><br>Lorem ipsum
+                                    dolor sit amet.</li>
+                                <li><span>2017 - 2019</span><br>Lorem ipsum
+                                    dolor sit.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2015</span><br>Developer</li>
+                                <li><span>2018</span><br>Developer</li>
+                                <li><span>2022</span><br>Developer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ad, quasi?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>Game Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ad, quasi?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h2>IOS Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ad, quasi?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Vel, cumque?</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Vel, cumque?</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Vel, cumque?</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>
+                            hovkarapetyan23@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +37477416239</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/Resume.pdf" download class="btn btn2">Download
+                            CV<i class="fas fa-download"></i></a>
+                    </div>
+                    <div class="contact-right">
+                        <form onsubmit="snedEmail(); reset(); return false;">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="Email"
+                                placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <!-- <div class="inputbox">
+                        <span>Your Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <span>Your Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <span>Your Message</span>
+                    </div> -->
+                            <button type="submit" class="btn btn2">Submit</button>
+                            <span id="msg"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright Hov</p>
+            </div>
+
+
+        </div>
+
+        <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            } 
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            } 
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+    history.go(-1);
+</script>
+    </body>
+</html>
